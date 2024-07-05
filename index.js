@@ -34,7 +34,6 @@ app.get('/', (req, res) => {
   res.send("Trazzel Server Running");
 });
 
-// Payment APi 
 app.post("/process-payment", async (req, res) => {
   const { email, cardNonce, amount, products } = req.body;
   try {
